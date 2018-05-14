@@ -69,7 +69,7 @@ Open the app on your browser, by default on `127.0.0.1:5000`.
 ## Live Demo
 
 The web app can be accessed from the following link
-`link goes here`
+`https://news-highlights-info.herokuapp.com/`
 
 ## Quickstart
 
