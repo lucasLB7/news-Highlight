@@ -1,0 +1,56 @@
+{% include 'head.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content%}
+<body>
+        <div id="wrapper">
+                {% include 'navbar.html'%}
+                        <div id="page-wrapper">
+                                <div id="page-inner">
+                                        <div class="row">
+                                                <div class="col-md-12">
+                                                        <h1 class="page-header">
+                                                        News Sources
+                                                        </h1>
+                                                </div>
+                                        </div>
+                                        <div id="business">
+                                                <h2 id="category-header">Business</h2>
+                                                {{ macro.displaySourceList(business_sources)}}
+                                        </div>
+                                       
+                                        <div id="technology">
+                                                <h2 id="category-header">Technology</h2>
+                                                {{ macro.displaySourceList(technology_sources)}}
+                                        </div>
+                                        
+                                        <div id="health">
+                                                <h2 id="category-header">Health</h2>
+                                                {{ macro.displaySourceList(health_sources)}}
+                                        </div>
+                                        
+                                        <div id="sports">
+                                                <h2 id="category-header">Sports</h2>
+                                                {{ macro.displaySourceList(sports_sources)}}
+                                        </div>
+                                       
+                                        <div id="entertainment">
+                                                <h2 id="category-header">Entertainment</h2>
+                                                {{ macro.displaySourceList(entertainment_sources)}}   
+                                        </div>
+                                        
+                                        <div id="general">
+                                                <h2 id="category-header">General</h2>   
+                                                {{ macro.displaySourceList(general_sources)}}     
+                                        </div>
+                                           
+                                        <div id="science">
+                                                <h2 id="category-header">Science</h2> 
+                                                {{ macro.displaySourceList(science_sources)}} 
+                                        </div>
+                                                                            
+                                </div>
+                </div>
+        </div>
+</body>
+{% endblock %}
